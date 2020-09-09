@@ -1,31 +1,34 @@
 import java.util.Scanner;
 public class Colorballs {
-
+    
+    static int noOfOdds(int[] a) {
+        int odds = 0;
+        for (int i=0; i<a.length; i++)
+            if (a[i] % 2 != 0)
+                odds++;
+        return odds;
+    }
     public static void main(String[] args) {
         var sc = new Scanner (System.in);
         int T = sc.nextInt();
         while(T-- > 0) {
-            int [] a = new int[4];
-            int evens_3 = 0, evens_1 = 0;
-            for (int i=0; i<4; i++) {
-                 a[i] = sc.nextInt();
-                if (i < 3 && a[i] % 2 == 0)
-                    evens_3++;
-                else if (a[i] % 2 == 0 && i == 3)
-                        evens_1++;
+            int[] a = new int[4];
+            for (int i=0; i<4; i++) a[i] = sc.nextInt();
+            if (noOfOdds(a) > 1) {
+                if (a[0] !=0 && a[1] != 0 && a[2] != 0 && a[3] != 0)  {
+                    for (int i=0; i<a.length; i++)
+                            a[i]--;
+                    if (noOfOdds(a) <= 1)
+                        System.out.println("Yes");
+                    else
+                        System.out.println("No");
+                }
+                else
+                    System.out.println("No");
             }
-            boolean cond1 = a[0] == 0 && a[1] == 0 && a[2] == 0 && a[3] == 0;
-            boolean cond2 = (a[0] == 0 || a[0] == 1) && (a[1] == 0 || a[1] == 1) && (a[2] == 0 || a[2] == 1) && (a[3] == 0 || a[3] == 1) ;
-            
-            if (cond1)  System.out.println("YES");
-            else if (cond2 && !cond1) System.out.println("NO");
-            else {
-                if (evens_3 == 3 || evens_3 == 0) System.out.println("YES");
-                else if ((evens_3 == 2 && evens_1 == 1) || (evens_3 == 1 && evens_1 == 0))  System.out.println("YES");
-                else System.out.println("NO");
-            }
+            else 
+                System.out.println("Yes");
         }
-
         sc.close();
     }
 }
