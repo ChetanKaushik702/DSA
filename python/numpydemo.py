@@ -1,0 +1,25 @@
+import numpy as np
+# x = np.full((5, 5), 10)
+# print(x)
+# print(x.dtype)
+# y = np.full((3, 3), 4, dtype=np.int64)
+# print(y)
+# print(y.dtype)
+# print(x.shape, y.shape)
+# a = np.array([[1, 2], [3, 4]], dtype=np.float64)
+# b = np.array([[5, 6], [7, 8]], dtype=np.float64)
+# print(a+b)
+# print(a-b)
+# print(np.multiply(a, b))
+# print(np.divide(a, b))
+# print(np.sqrt(x))
+# print(np.transpose(a+b))
+# # or
+# print((a+b).T)
+# # column-wise sum
+# print(np.sum(x, axis=0))
+# # row-wise sum
+# print(np.sum(x, axis=1))
+# p = np.array([[1, 2, 3], [4, 5, 6]])
+# print(np.sum(p, axis=2))
+print(np.random.randint(1, 5, (2, 5)))

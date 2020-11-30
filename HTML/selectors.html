@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        p{
+            border: 2px solid black;
+        }
+        #heading, #divParagraph{
+            color: magenta;
+        }
+        .paragraph{
+            color: red;
+        }
+        /*Grouping selector*/
+        footer, span {
+            color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="heading" class="paragraph">CSS Selectors</h3>
+    <p class="paragraph">This is a simple paragraph</p>
+    <p class="paragraph">This is another simple paragraph</p>
+    <div>
+        <p id = "divParagraph" class="paragraph">This is yet another paragraph inside a div tag</p>
+        <span>This is a span</span>
+    </div>
+    <footer>This is a footer</footer>
+</body>
+</html>

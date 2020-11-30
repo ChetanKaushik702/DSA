@@ -7,7 +7,7 @@ public class Vcs {
         Scanner sc = new Scanner (System.in);
         int T = sc.nextInt();
         while (T-- > 0) {
-            int N = sc.nextInt();
+            //int N = sc.nextInt();
             int M = sc.nextInt();
             int K = sc.nextInt();
             Set<Integer> setM = new HashSet<>();
@@ -16,9 +16,7 @@ public class Vcs {
                 setM.add(sc.nextInt());
             for (int i=0; i<K; i++)
                 setK.add(sc.nextInt());
-            
-            Set<Integer> union = Sets.union(setM, setK);
-            System.out.println(union.size() + "\n" + (N-union.size()));
+
         }
         sc.close();
     }
