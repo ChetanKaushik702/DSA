@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Tables</title>
+        <style>
+            table, th, td {
+                width: 50%;
+                border: 2px solid black;
+                border-collapse: collapse;
+                margin:auto;
+            }
+            th, td {
+                padding: 15px;
+            }
+            th {
+                text-align: left;
+            }
+
+            #t1 tr:nth-child(even) {
+                background-color: #eee;
+            }
+            #t1 tr:nth-child(odd) {
+                background-color: #fff;
+            }
+            #t1 th {
+                background-color: black;
+                color: white;
+            }
+            caption {
+                font-weight: 800;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML Tables Demonstration</h1>
+        <table id="t1">
+            <caption>Employee Details</caption>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Alfred Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+            </tr>
+        </table>
+    </body>
+</html>

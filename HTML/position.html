@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Demo</title>
+    <style>
+        body {
+            padding:0px;
+            margin:0px;
+            background-color: black;
+            color: white;
+            height: 5000px;
+        }
+        div.static {
+            border: 3px solid rgb(110, 5, 248);
+            margin-top: 50px;
+        }
+        .static span {
+            color: rgba(83, 238, 11, 0.973);
+        }
+
+        div.relative {
+            border: 3px solid red;
+            position: relative;
+            left: 50px;
+            top: 10px;
+            width: 500px;
+            height: 300px;
+        }
+        .relative span {
+            color:  rgba(83, 238, 11, 0.973);
+        }
+
+        div.fixed {
+            border: 3px solid greenyellow;
+            background-color: white;
+            color: black;
+            position: fixed;
+            bottom:0px;
+            right: 0px;
+        }
+        .fixed span {
+            color: rgba(12, 15, 177, 0.973);
+        }
+
+        div.absolute {
+            border: 3px solid rgb(255, 13, 146);
+            position: absolute;
+            right:0px;
+            bottom: 0px;
+        }
+        .absolute span {
+            color: rgb(112, 112, 245);
+        }
+
+        div.sticky {
+            border: 3px solid green;
+            /* position: -webkit-sticky; */
+            position:sticky;
+            top:0px;
+            right:0px;
+        }
+        .sticky span {
+            color: rgb(6, 247, 66);
+        }
+    </style>
+</head>
+<body>
+    <div class="static">
+        This is an element with <span>position: static;</span>
+    </div>
+
+    <div class="relative">
+        This is an element with <span>position: relative;</span>
+        <div class="absolute">
+            This is an element with <span>position: absolute;</span>
+        </div>
+    </div>
+    <div class="sticky">
+        This is an element with <span>position: sticky;</span>
+    </div>
+    
+    <div class="fixed">
+        This is an element with <span>position: fixed;</span>
+    </div>
+</body>
+</html>

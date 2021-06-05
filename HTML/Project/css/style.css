@@ -1,0 +1,156 @@
+/* CSS Reset*/
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* navbar */
+#navbar {
+    display:flex;
+    /* border: 3px solid red; */
+    width: 50%;
+    margin: 0px 0px 0px 50px;
+}
+
+/* logo */
+.logo {
+    /* border: 2px solid green; */
+    margin-right: 20px;
+}
+.logo img {
+    width: 260px;
+    height: 115px;
+}
+
+/* list */
+.list {
+    display: flex;
+    /* border: 2px solid blue; */
+    margin: 20px 0px 0px 250px;
+    height: 50px;
+}
+
+/* anchor decoration */
+.list a{
+    text-decoration: none;
+    font-size: 25px;
+    padding-right: 20px;
+}
+
+/* hovering effect */
+.list a:hover {
+    color:rgb(12, 12, 240);
+    font-weight: bold;
+}
+
+.list li {
+    list-style-type: none;
+}
+
+/* para styling */
+.para {
+    /* border: 2px solid green; */
+    margin: 80px 0px 0px 100px;
+    display: inline-block;
+    color: gray;
+    font-size: 22px;
+}
+
+/* location styling */
+.delivery {
+    /* border: 2px solid rgb(236, 101, 10); */
+    margin: 20px 0px 0px 80px;
+    padding-left: 15px;
+    width: 50%;
+}
+
+/* input styling */
+.delivery input {
+    font-size: 18px;
+    font-weight: 500%;
+    width: 500px;
+    padding: 5px 5px 5px 5px; 
+}
+
+/* span styling */
+.delivery span a{
+    text-decoration: none;
+    background-color: rgb(238, 100, 9);
+    /* border:2px solid blue; */
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500%;
+    
+}
+
+.delivery span a:hover {
+    font-weight: bold;
+}
+
+/* cities decoration */
+.cities {
+    /* border: 2px solid black; */
+    margin: 20px 0px 0px 100px;
+    width: 50%;
+}
+
+.cities p {
+    color: rgb(146, 137, 137);
+}
+
+.cities h3 {
+    color:rgb(146, 137, 137);
+}
+
+.box {
+    /* border: 2px solid blue; */
+    background-color: black;
+    height: 350px;
+}
+
+.box div {
+    display: inline-block;
+    /* border: 2px solid white; */
+}
+#div1 {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#div2 {
+    margin-left: 150px;
+    margin-right: 200px;
+}
+#div3 {
+    margin-left: 200px;
+    margin-right: 150px;
+}
+#img1 {
+    width: 112px;
+    height: 206px;
+}
+#img2 {
+    width: 105px;
+    height: 199px;
+}
+#img3 {
+    width: 124px;
+    height: 188px;
+}
+
+/* box content */
+.track h3 {
+    color: white;
+    padding-left: 125px;
+}
+
+.order h3 {
+    color: white;
+    padding-left:120px;
+}
+
+.deliver h3 {
+    color: white;
+    padding-left: 150px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <h2>This is a simple form</h2>
+        <form action="backend.php">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" value="Chetan">
+            <br>
+            <br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" value="Kaushik">
+            <br>
+            <br>
+
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="other">Others</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <br>
+            <br>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1">I have a bike</label><br>
+
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2">I have a car</label><br>
+
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="boat">
+            <label for="vehicle3">I have a boat</label><br>
+            <br>
+            <label for="vaccine">Choose a vaccine company</label>
+            <select id="vaccine" name="vaccine">
+                <option value="bharat biotech">Bharat Biotech</option>
+                <option value="serum institute">Serum Institute</option>
+                <option value="Indian Immunilogicals" selected>Indian Immunologicals</option>
+                <option value="Zydus Cadila">Zydus Cadila</option>
+                <option value="Panacea Biotec">Panacea Biotech</option>
+            </select>
+            <br><br>
+
+            <input type="button" value="Submit" onclick="alert('Do you want to submit the form?')">
+            <!-- <button type="button" onclick="alert('Do you want to submit the form?')">Submit</button> -->
+        </form> 
+    </body>
+</html>

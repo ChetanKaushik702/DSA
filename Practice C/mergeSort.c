@@ -1,13 +1,19 @@
 /*Merge Sort Algorithm */
 #include <stdio.h>
 #include <limits.h>
+#include <conio.h>
+#define SIZE 10
 void merge(int [],int ,int ,int );
 void mergeSort(int [], int ,int);
 void arrDisplay(int [], int );
 
-int main()
+void main()
 {
-    int arr[] = { 23,12,24,56,-19,-89,0,78};
+    int arr[SIZE];
+    printf("Enter %d elements in the array:\n", SIZE);
+    for (int i=0; i<SIZE; i++)
+        scanf("%d", &arr[i]);
+
     int n = sizeof(arr)/sizeof(int);
     printf("Initial array is\n");
     arrDisplay(arr,n);
@@ -15,7 +21,7 @@ int main()
     printf("Sorted array is\n");
     arrDisplay(arr,n);
 
-    return 0;
+    getch();
 }
 void arrDisplay(int arr[],int n)
 {
